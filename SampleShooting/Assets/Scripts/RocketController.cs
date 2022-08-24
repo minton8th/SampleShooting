@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RocketController : MonoBehaviour
 {
+    public GameObject bulletPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,9 @@ public class RocketController : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.RightArrow)){
             transform.Translate(0.1f, 0, 0);
+        }
+        if(Input.GetKeyDown(KeyCode.Space)){
+            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         }
     }
 }
