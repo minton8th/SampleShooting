@@ -20,7 +20,9 @@ public class RockController : MonoBehaviour
         transform.Translate(0, -fallSpeed, 0, Space.World);
         transform.Rotate(0, 0, rotSpeed);
 
-        if (transform.position.y < -5.5f){
+        if (transform.position.y < -5.5f)
+        {
+            GameObject.Find("Canvas").GetComponent<UIController>().GameOver();
             Destroy(gameObject);
         }
     }
