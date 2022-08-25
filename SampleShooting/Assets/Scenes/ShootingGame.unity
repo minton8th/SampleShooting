@@ -469,8 +469,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c93fc4a3d19124a7db8f6401a76e1ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rockPrefab: {fileID: 5576466732664530137, guid: aea4b6d5cc7ec4b7191bf62a4dd03122,
-    type: 3}
+  rockPrefab:
+  - {fileID: 5576466732664530137, guid: aea4b6d5cc7ec4b7191bf62a4dd03122, type: 3}
+  - {fileID: 5576466732664530137, guid: d9ebda362fb54451eaa7044df1b705b8, type: 3}
+  - {fileID: 5576466732664530137, guid: 39b8bc32c9809483abfa325a0ed8d66e, type: 3}
+  - {fileID: 5576466732664530137, guid: 0d738efd82322496c96fef3bd85c8784, type: 3}
+  - {fileID: 5576466732664530137, guid: 293438ee5afce447d8539713d8a5c16b, type: 3}
+  - {fileID: 5576466732664530137, guid: 3f520624b0c084d7eaca60083c18c2fb, type: 3}
+  - {fileID: 5576466732664530137, guid: 7a2ded0a169404da29c0556b9746d5b4, type: 3}
+  - {fileID: 5576466732664530137, guid: c289dd988d8904c6cab91a3163e587d3, type: 3}
 --- !u!4 &1264340154
 Transform:
   m_ObjectHideFlags: 0
