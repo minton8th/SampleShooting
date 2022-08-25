@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RockGenerator : MonoBehaviour
 {
-    public GameObject rockPrefab;
+    [SerializeField] GameObject[] rockPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +14,12 @@ public class RockGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    void GenRock(){
-        Instantiate(rockPrefab, new Vector3(-2.5f + 5 * Random.value, 6, 0), Quaternion.identity);
+    void GenRock()
+    {
+        int randomNum = Random.Range(0, 8);
+        Instantiate(rockPrefab[randomNum], new Vector3(-2.5f + 5 * Random.value, 6, 0), Quaternion.identity);
     }
 }
